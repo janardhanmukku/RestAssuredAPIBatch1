@@ -1,12 +1,13 @@
 package com.w2a.RestAsssured_API_Batch1.TestCases;
 
-import static io.restassured.RestAssured.given;
+//import static io.restassured.RestAssured.given;
 
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 import static org.assertj.core.api.Assertions.*;
+import static io.restassured.path.json.JsonPath.*;
 import java.util.Hashtable;
 
 import com.w2a.RestAsssured_API_Batch1.Setup.SetUp;
@@ -15,7 +16,7 @@ import com.w2a.RestAsssured_API_Batch1.Utils.DataProviderClass;
 import com.w2a.RestAsssured_API_Batch1.Utils.TestUtils;
 
 import io.restassured.path.json.JsonPath;
-import static io.restassured.path.json.JsonPath.*;
+
 import io.restassured.response.Response;
 //import static io.restassured.
 

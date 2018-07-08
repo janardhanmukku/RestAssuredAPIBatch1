@@ -1,6 +1,8 @@
 package com.w2a.RestAsssured_API_Batch1.Setup;
 
 import java.lang.reflect.Method;
+import java.util.Map;
+
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
@@ -16,12 +18,16 @@ import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.w2a.RestAsssured_API_Batch1.Utils.ConfigProperties;
 import com.w2a.RestAsssured_API_Batch1.Utils.ExcelReader;
 import com.w2a.RestAsssured_API_Batch1.Utils.ExtentManager;
 
-import io.restassured.RestAssured;
-import io.restassured.specification.RequestSpecification;
+import io.restassured.*;
+import io.restassured.specification.*;
+
+/*import io.restassured.RestAssured;
+import io.restassured.specification.RequestSpecification;*/
 
 public class SetUp {
 
@@ -43,7 +49,7 @@ public class SetUp {
 		RestAssured.basePath = testEnvironment.getBasePath();
 
 		extent = ExtentManager.GetExtent();
-		requestSpec=setRequestSpec();
+		
 
 	}
 
@@ -61,7 +67,31 @@ public class SetUp {
 	}
 
 	@BeforeMethod(alwaysRun = true)
-	public void beforeMethod(Method method) {
+	public void beforeMethod(Object[] testArgs,Method method) {
+		
+		ExtentTest child = classLevelExtentTest.get().createNode(method.getName());
+		testCaseLogger.set(child);
+
+		testCaseLogger.get().log(Status.INFO, "Execution of Test case- " +method.getName()+ " started");
+	
+		System.out.println("Size of Object Array in Before Method:"+testArgs.length);
+		
+		Map<String,String>	value=(Map<String,String>)testArgs[0];
+		if(value.get("isValidKeyReq").equalsIgnoreCase("y"))
+		{
+			extentLogger().info("Valid Secret key passed");
+			requestSpec=setRequestSpec(testEnvironment.getValidKey());
+		}
+		else
+		{
+			extentLogger().info("InValid Secret key passed");
+			requestSpec=setRequestSpec(testEnvironment.getInValidKey());
+			
+		}
+		//System.out.println("in before method--> "+testArgs.length);
+		Map<String,String> paramMap = (Map<String, String>)testArgs[0];
+		System.out.println("in before method--> "+paramMap);
+		
 		// System.out.println("Execution of Test case:-" + method.getName() + "
 		// started");
 
@@ -88,9 +118,9 @@ public class SetUp {
 
 	}
 
-	public static RequestSpecification setRequestSpec() {
+	public static RequestSpecification setRequestSpec(String key) {
 
-		return given().auth().basic(testEnvironment.getValidKey(), "").when();
+		return given().auth().basic(key, "").when();
 	}
 	
 	public static ExtentTest extentLogger()

@@ -71,11 +71,11 @@ public class TestListeners extends SetUp implements ITestListener, ISuiteListene
 	}
 
 	public void onTestStart(ITestResult arg0) {
-		ExtentTest child = classLevelExtentTest.get().createNode(arg0.getMethod().getMethodName());
+		/*ExtentTest child = classLevelExtentTest.get().createNode(arg0.getMethod().getMethodName());
 		testCaseLogger.set(child);
 
 		testCaseLogger.get().log(Status.INFO, "Execution of Test case- " + arg0.getMethod().getMethodName() + " started");
-	}
+	*/}
 
 	public void onTestSuccess(ITestResult arg0) {
 

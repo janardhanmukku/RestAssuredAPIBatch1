@@ -31,7 +31,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-							<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -45,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 3, 2018 03:35:04 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 8, 2018 10:56:14 AM</span>
 				</a>
 			</li>
 			<li>
@@ -78,6 +79,16 @@
 			<!-- test toggle -->
 
 			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>Regression</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
 			<!-- category toggle -->
 
 			<!-- clear filters -->
@@ -151,10 +162,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>1</span> log(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='11.111%'><span class='strong'>1</span> log(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> log(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='66.667%'>2</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> log(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='88.889%'>8</span> others
 				</div>
 			</div>
 		</div>
@@ -170,26 +181,29 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>TC_01</span>
-						<span class='test-time'>Jul 3, 2018 03:35:04 PM</span>
+						<span class='test-name'>ValidateCreateCustomerAPI</span>
+						<span class='test-time'>Jul 8, 2018 10:56:14 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 3, 2018 03:35:04 PM</span>
-	<span class='label end-time'>Jul 3, 2018 03:35:07 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+354ms</span>
+	<span class='label start-time'>Jul 8, 2018 10:56:14 AM</span>
+	<span class='label end-time'>Jul 8, 2018 10:56:19 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+740ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
 				<li class='node level-1 leaf pass' status='pass' test-id='2'>
 					<div class='collapsible-header'>
-						<div class='node-name'>retriveAllCustomers</div>						
-						<span class='node-time'>Jul 3, 2018 03:35:04 PM</span>
-						<span class='node-duration'>0h 0m 3s+264ms</span>
+						<div class='node-name'>validateCreateCustomerWithValidAuthKey</div>						
+						<span class='node-time'>Jul 8, 2018 10:56:14 AM</span>
+						<span class='node-duration'>0h 0m 4s+681ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>Regression</span>
+									</div>
 									<div class='author-list right'>
 											<span class='author label white-text'>RahulJha</span>
 									</div>
@@ -205,18 +219,79 @@
 										<tbody>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:35:04 PM</td>
-													<td class='step-details'>Execution of Test case- retriveAllCustomers started</td>
+													<td class='timestamp'>10:56:14 AM</td>
+													<td class='step-details'>Execution of Test case- validateCreateCustomerWithValidAuthKey started</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:35:07 PM</td>
-													<td class='step-details'>called API to retrive all customers</td>
+													<td class='timestamp'>10:56:14 AM</td>
+													<td class='step-details'>Valid Secret key passed</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>10:56:14 AM</td>
+													<td class='step-details'>Added email as FormParam with value test1@gmail.com</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>10:56:14 AM</td>
+													<td class='step-details'>Added description as FormParam with value this is a test customer new</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>10:56:14 AM</td>
+													<td class='step-details'>Added business_vat_id as FormParam with value rahul123</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>10:56:14 AM</td>
+													<td class='step-details'>Method type is: post</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>10:56:14 AM</td>
+													<td class='step-details'>EndPoint is: /customers</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>10:56:18 AM</td>
+													<td class='step-details'><details><summary><b><font color=Green>Click here to see Response</font></b ></summary>{
+  "id": "cus_DBtBp7TwD3dDlN",
+  "object": "customer",
+  "account_balance": 0,
+  "business_vat_id": "rahul123",
+  "created": 1531027576,
+  "currency": null,
+  "default_source": null,
+  "delinquent": false,
+  "description": "this is a test customer new ",
+  "discount": null,
+  "email": "test1@gmail.com",
+  "invoice_prefix": "170DE2C",
+  "livemode": false,
+  "metadata": {},
+  "shipping": null,
+  "sources": {
+    "object": "list",
+    "data": [],
+    "has_more": false,
+    "total_count": 0,
+    "url": "/v1/customers/cus_DBtBp7TwD3dDlN/sources"
+  },
+  "subscriptions": {
+    "object": "list",
+    "data": [],
+    "has_more": false,
+    "total_count": 0,
+    "url": "/v1/customers/cus_DBtBp7TwD3dDlN/subscriptions"
+  }
+}
+</details></td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:35:07 PM</td>
-													<td class='step-details'><span class='label white-text green'><b>Test Case:- retriveAllCustomers Passed</b></span></td>
+													<td class='timestamp'>10:56:19 AM</td>
+													<td class='step-details'><span class='label white-text green'><b>Test Case:- validateCreateCustomerWithValidAuthKey Passed</b></span></td>
 												</tr>
 										</tbody>
 									</table>
@@ -251,6 +326,76 @@
 
 </div>
 <!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Regression</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 8, 2018 10:56:14 AM</td>
+										<td class='linked' test-id='2'>ValidateCreateCustomerAPI.validateCreateCustomerWithValidAuthKey</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
 <!-- category view -->
 <div id='author-view' class='view hide'>
     <section id='controls'>
@@ -301,8 +446,8 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jul 3, 2018 03:35:04 PM</td>
-                                                <td class='linked' test-id='2'>TC_01.retriveAllCustomers</td>
+                                                <td>Jul 8, 2018 10:56:14 AM</td>
+                                                <td class='linked' test-id='2'>ValidateCreateCustomerAPI.validateCreateCustomerWithValidAuthKey</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                         </tbody>
@@ -342,25 +487,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>9</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 3, 2018 03:35:04 PM</div>
+					<div class='panel-lead'>Jul 8, 2018 10:56:14 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 3, 2018 03:35:07 PM</div>
+			 		<div class='panel-lead'>Jul 8, 2018 10:56:19 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>3,557ms</div>
+					<div class='panel-lead'>4,879ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -376,6 +521,26 @@
 								<td>Host Name</td>
 								<td>Rahul@Java</td>
 							</tr>
+					</table>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+						</tr>
+						<tr>
+							<td>Regression</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
 					</table>
 				</div>
 			</div>
@@ -412,7 +577,7 @@
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
-				infoGrandChild: 2,
+				infoGrandChild: 8,
 				exceptionsGrandChild: 0,
 			};
 		</script>

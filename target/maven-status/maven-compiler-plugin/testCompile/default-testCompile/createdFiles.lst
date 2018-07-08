@@ -1,0 +1,4 @@
+com\w2a\RestAsssured_API_Batch1\TestCases\RoughClass.class
+com\w2a\RestAsssured_API_Batch1\TestCases\ValidateCreateCustomerAPI.class
+com\w2a\RestAsssured_API_Batch1\TestCases\TC_01.class
+com\w2a\RestAsssured_API_Batch1\TestCases\DeleteCustomerAPITest.class

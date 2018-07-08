@@ -8,8 +8,9 @@
 	</listeners>
 	<test name="Test">
 		<classes>
-			<class name="com.w2a.RestAsssured_API_Batch1.TestCases.TC_01" />
-			<!-- <class name="com.w2a.RestAsssured_API_Batch1.TestCases.ValidateCreateCustomerAPI" /> -->
+			<!-- <class name="com.w2a.RestAsssured_API_Batch1.TestCases.RoughClass" /> -->
+			<!-- <class name="com.w2a.RestAsssured_API_Batch1.TestCases.DeleteCustomerAPITest" /> -->
+			<class name="com.w2a.RestAsssured_API_Batch1.TestCases.ValidateCreateCustomerAPI" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

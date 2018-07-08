@@ -6,19 +6,19 @@
   </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="com.w2a.RestAsssured_API_Batch1.TestCases.TC_01">
+      <class name="com.w2a.RestAsssured_API_Batch1.TestCases.ValidateCreateCustomerAPI">
         <methods>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
           <include name="setUp"/>
           <include name="afterMethod"/>
-          <include name="retriveAllCustomers" invocation-numbers="0"/>
           <include name="afterSuite"/>
           <include name="afterTest"/>
           <include name="AfterClass"/>
           <include name="beforeTest"/>
+          <include name="validateCreateCustomerWithValidAuthKey"/>
         </methods>
-      </class> <!-- com.w2a.RestAsssured_API_Batch1.TestCases.TC_01 -->
+      </class> <!-- com.w2a.RestAsssured_API_Batch1.TestCases.ValidateCreateCustomerAPI -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

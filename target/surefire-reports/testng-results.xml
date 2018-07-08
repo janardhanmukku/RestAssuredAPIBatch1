@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="5083" started-at="2018-07-08T05:26:14Z" finished-at="2018-07-08T05:26:19Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="5083" started-at="2018-07-08T05:26:14Z" finished-at="2018-07-08T05:26:19Z">
+      <class name="com.w2a.RestAsssured_API_Batch1.TestCases.ValidateCreateCustomerAPI">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.RestAsssured_API_Batch1.TestCases.ValidateCreateCustomerAPI@45b9a632]" name="setUp" is-config="true" duration-ms="650" started-at="2018-07-08T10:56:13Z" finished-at="2018-07-08T10:56:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.w2a.RestAsssured_API_Batch1.TestCases.ValidateCreateCustomerAPI@45b9a632]" name="beforeTest" is-config="true" duration-ms="1" started-at="2018-07-08T10:56:14Z" finished-at="2018-07-08T10:56:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.w2a.RestAsssured_API_Batch1.TestCases.ValidateCreateCustomerAPI@45b9a632]" name="afterSuite" is-config="true" duration-ms="1" started-at="2018-07-08T10:56:14Z" finished-at="2018-07-08T10:56:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.w2a.RestAsssured_API_Batch1.TestCases.ValidateCreateCustomerAPI@45b9a632]" name="beforeClass" is-config="true" duration-ms="3" started-at="2018-07-08T10:56:14Z" finished-at="2018-07-08T10:56:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod([Ljava.lang.Object;, java.lang.reflect.Method)[pri:0, instance:com.w2a.RestAsssured_API_Batch1.TestCases.ValidateCreateCustomerAPI@45b9a632]" name="beforeMethod" is-config="true" duration-ms="161" started-at="2018-07-08T10:56:14Z" finished-at="2018-07-08T10:56:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7a22a3c2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.w2a.RestAsssured_API_Batch1.TestCases.ValidateCreateCustomerAPI.validateCreateCustomerWithValidAuthKey(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateCreateCustomerWithValidAuthKey(java.util.Hashtable)[pri:0, instance:com.w2a.RestAsssured_API_Batch1.TestCases.ValidateCreateCustomerAPI@45b9a632]" name="validateCreateCustomerWithValidAuthKey" duration-ms="4519" started-at="2018-07-08T10:56:14Z" data-provider="dp" finished-at="2018-07-08T10:56:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{expectedEmailId=test1@gmail.commmmm, methodType=post, endPoint=/customers, isValidKeyReq=y, expectedStatusCode=201, formParam=email:test1@gmail.com,description:this is a test customer new ,business_vat_id:rahul123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateCustomerWithValidAuthKey -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.w2a.RestAsssured_API_Batch1.TestCases.ValidateCreateCustomerAPI@45b9a632]" name="afterMethod" is-config="true" duration-ms="334" started-at="2018-07-08T10:56:19Z" finished-at="2018-07-08T10:56:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterClass()[pri:0, instance:com.w2a.RestAsssured_API_Batch1.TestCases.ValidateCreateCustomerAPI@45b9a632]" name="AfterClass" is-config="true" duration-ms="1" started-at="2018-07-08T10:56:19Z" finished-at="2018-07-08T10:56:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.w2a.RestAsssured_API_Batch1.TestCases.ValidateCreateCustomerAPI@45b9a632]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-07-08T10:56:19Z" finished-at="2018-07-08T10:56:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.w2a.RestAsssured_API_Batch1.TestCases.ValidateCreateCustomerAPI -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
